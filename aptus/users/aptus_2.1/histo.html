@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique</title>
+    <link rel="stylesheet" href="{% static 'histo.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Historique</h1>
+        <nav>
+            <ul>
+                <li><a href="{ url ' library:start' }">Accueil</a></li>
+                <li><a href="{ url ' library:biblo_end' }">Bibliothèque</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="{ url 'fav' }">mes favories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="antiquite">
+            <h2>Antiquité</h2>
+            <div class="livre">
+                <img src="{% static 'images/rome.jpg' %}" alt="Histoire de Rome">
+                <h3>Histoire de Rome</h3>
+                <p>Une exploration fascinante de l'Empire romain</p>
+                <button>En savoir plus</button>
+            </div>
+        </section>
+
+        <section id="moyen-age">
+            <h2>Moyen Âge</h2>
+            <div class="livre">
+                <img src="{% static 'images/medieval.jpg' %}" alt="Les Châteaux Forts">
+                <h3>Les Châteaux Forts</h3>
+                <p>Découvrez l'architecture médiévale</p>
+                <button>En savoir plus</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Bibliothèque Historique - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

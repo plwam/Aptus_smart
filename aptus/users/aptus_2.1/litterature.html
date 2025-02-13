@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Littérature - Bibliothèque Numérique Éducative</title>
+    <link rel="stylesheet" href="{% static 'litterature.css' %}">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <div class="logo">
+                <H1><strong>Aptus</strong></H1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{ url ' library:start'}">Accueil</a></li>
+                <li><a href="{ url 'biblo_end'}" class="active">Bibliothèque</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Découvrez notre Collection Littéraire</h1>
+            <p>Une sélection raffinée des plus grands classiques aux œuvres contemporaines</p>
+        </section>
+
+        <section class="featured-books">
+            <h2>Œuvres Populaires</h2>
+            <div class="book-grid">
+                <article class="book-card">
+                    <img src="{% static 'images/books/les-miserables.jpg' %}" alt="Les Misérables">
+                    <h3>Les Misérables</h3>
+                    <p>Victor Hugo</p>
+                    <button class="read-btn">Lire maintenant</button>
+                </article>
+                <article class="book-card">
+                    <img src="{% static 'images/books/madame-bovary.jpg'}" alt="Madame Bovary">
+                    <h3>Madame Bovary</h3>
+                    <p>Gustave Flaubert</p>
+                    <button class="read-btn">Lire maintenant</button>
+                </article>
+                <!-- Ajoutez d'autres livres selon vos besoins -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Bibliothèque Numérique Éducative</p>
+        </div>
+    </footer>
+</body>
+</html>

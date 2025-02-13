@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, #5d5742bd 0%, #c49344 100%);
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    background-color: rgba(158, 124, 61, 0.9);
+    color: white;
+    padding: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0339fb;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(158, 124, 61, 0.242), rgba(0,0,0,0.5)), url("{%  static 'Etud.jpg' %}");
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero2 {
+    background-color:#fbfbfb ;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+.balbine{
+    padding: 20px;
+    width: 100%;
+}
+.balbine img{
+    padding: 0px;
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.search-bar {
+    margin: 20px auto;
+    width: 600px;  
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ff7503;
+    border-radius: 50px;
+    background: #19181853;
+    height: 50px;
+    color: #ffffff;
+    
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.categories ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+.category-card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #09203f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+
+}
+
+footer {
+    background-color: rgba(158, 124, 61, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    .hero {
+        background-image: linear-gradient(rgba(158, 124, 61, 0.9), rgba(0,0,0,0.5)), url("img/Etud.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 15px;
+        text-align:center;
+    }
+    .search-bar {
+        margin: 10px auto;
+        width: 100%;  
+        padding: 20px;
+    }
+    
+}
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ff7503;
+    border-radius: 50px;
+    background: #19181853;
+    height: 50px;
+    color: #ffffff;
+    
+}
