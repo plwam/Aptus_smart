@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aptus</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+   <div class="backall"> <!-- premiere partie: navigation et logo -->
+    <!-- deuxieme partie: main page -->
+    <div class="page">
+      <div class="textes">
+        <h1 class="ass"><strong>Aptus</strong></h1>
+        <p>Découvrez le plaisir,le gout et la sensation de l'apprentissage en ligne avec <b>Aptus!</b>  Que vous soyez étudiant, enseignant ou simplement un passionné de connaissance, notre plateforme est conçue pour répondre à tous vos besoins éducatifs.
+        </p>
+        <div class="buttons">
+          <div class="btn1"><a href="{ url ' users:login' }">Login</a></div>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="{% static './img/btec.jpeg' %}" alt="quest photo" width="400px" />
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

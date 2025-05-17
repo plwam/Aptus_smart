@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+
+* {
+    box-sizing: border-box;
+}
+body ,html {
+font-size: 18px;
+font-family: "Montserrat" ,sans-serif;
+color: rgba(0, 0, 0, 0.87);
+line-height: 1.6;
+margin: 0px;
+background-color: rgba(204, 198, 190, 0.87);
+background: no-repeat center center / cover   url("img/bt.jpeg");
+
+
+
+}
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #5b3f1600;
+    padding: 5px 20px ;
+    z-index: 2;
+}
+.topbar nav {
+    float: left;
+
+}
+.topbar nav a {
+    color: #929292;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.topbar .social {
+    float: right;
+}
+.baniere { 
+    
+    height: 120px;
+    animation: sileDown 2s reverse;
+}
+.baniere2 { 
+    
+    height: 60px;
+    animation: sileDown 2s reverse;
+}
+.baniere3 { 
+    
+    height: 60px;
+    animation: sileDown 2s reverse;
+}
+.topbar nav a:hover {
+    color: rgb(255, 255, 255);
+}
+.topbar img {
+    width: 50px;
+    height: 50px;
+}
+.social a {
+    padding: 0px 10px;
+    opacity: 5;
+    text-decoration: none;
+}
+.main1 {
+    background: no-repeat center center / cover   url("img/books.jpeg");
+    position: relative;
+    width: 50%;
+    height: 450px;
+    float: left;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    box-shadow: 0 4px 30px rgba(1, 9, 1, 7);
+    animation: sileDown 1s;
+}
+.main1:hover {
+    background: #42414121;
+}
+.main1 h1 {
+    color: aliceblue;
+    padding: 120PX 100px;
+    font-family:"Pacifico", cursive ;
+    font-size: 400%;
+    transition: transform 0.3s ease;
+
+}
+.main1 h1:hover {
+color: #ffffff;
+transform: scale(1.2);
+}
+.main2 h1 {
+    color: aliceblue;
+    padding: 50PX 100px;
+    font-family:"Pacifico", cursive ;
+    transition: transform 0.3s ease;
+
+}
+.main2 h1:hover {
+color: #ffffff;
+transform: scale(1.2);
+
+}
+
+.main3 h1 {
+    color: aliceblue;
+    padding: 50PX 100px;
+    font-family:"Pacifico", cursive ;
+    transition: transform 0.3s ease;
+
+}
+.main3 h1:hover {
+color: #fcfcfc;
+transform: scale(1.2);
+}
+    
+.footer {
+    clear:both ;
+}
+.main2 {
+    background: no-repeat center center / cover   url("img/kitabu.jpeg");
+    position: relative;
+    width: 44%;
+    height: 200px;
+    float: right;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    box-shadow: 0 8px 30px rgba(1, 1, 1, 7);
+    animation: sileDown 1.4s;
+
+
+}
+.main2 h1 {
+    color: aliceblue;
+    position: absolute;
+}
+.main3 {
+    background: no-repeat center center / cover   url("img/petasse.jpeg");
+    position: relative;
+    width: 44%;
+    height: 220px;
+    float: right;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    box-shadow: 0 4px 30px rgba(1, 1, 1, 7);
+    animation: sileDown 1.5s;
+
+
+}
+.main3 h1 {
+    color: aliceblue;
+    position: absolute;
+}
+.autrelink nav  {
+    bottom: 0;
+    width: 100%;
+    float: left;
+    animation: sileDown 4s;
+
+}
+.autrelink nav a {
+    background: no-repeat center center / cover   url("img/petityake.jpeg");   
+    color: #151515;
+    text-decoration: none;
+    padding: 50px 140px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(1, 1, 1, 7);
+    color: aliceblue;
+    margin: 40px;
+}
+@keyframes sileDown {
+    0% {
+        transform: translateY(200px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

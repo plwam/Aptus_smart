@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeunesse</title>
+    <link rel="stylesheet" href="{% static 'bd.css' %}">
+</head>
+<body>
+    <header>
+        <h1>programmation</h1>
+        <nav>
+            <ul>
+                <li><a href="#bd">Web</a></li>
+                <li><a href="#mangas">Desktop</a></li>
+                <li><a href="#local">Database</a></li>
+                <li><a href="{% url 'library:biblio_end' %}"><em class="retour">Retour</em></a></li>
+            </ul>        </nav>
+    </header>
+    <main>
+        <section id="mangas">
+            <div class="grid-livres">
+                {% for inf in infos %}
+                            <div class="livre">
+                                <a href="{{ inf.file.url }}">
+
+                                <img src="{% static 'img1/D.jpeg' %}" alt="un livre" style="width=100px,height=100px">
+                                <h3>{{inf.title}}</h3>
+                                <p>{{inf.title}}</p>
+                            </a>
+
+                            </div>     
+                {% endfor %}
+            </div>
+
+        </section>
+        
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Bibliothèque</p>
+    </footer>
+</body>
+</html>

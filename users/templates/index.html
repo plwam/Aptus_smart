@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quest</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+   <div class="backall"> <!-- premiere partie: navigation et logo -->
+    <!-- deuxieme partie: main page -->
+    <div class="page">
+      <div class="textes">
+        <h1 class="ass"><strong>Aptus</strong></h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, nam
+          corporis minima quo mollitia obcaecati, porro non maxime ex est,
+          delectus possimus doloremque fugiat soluta quisquam minus iste at qui!
+        </p>
+        <div class="buttons">
+          <div class="btn1"><a href="{% url 'users:login' %}">Login</a></div>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="{% static 'img/btec.jpeg' %}" alt="quest photo" width="400px" />
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
